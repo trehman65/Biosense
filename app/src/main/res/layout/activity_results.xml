@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biosense.adminappv1.biosense.ResultsActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESULTS"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#1f1f1f"
+            android:textSize="24dp"
+            android:id="@+id/results_title"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.biosense.adminappv1.biosense.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:text="ID"
+                    android:textColor="#546B83" />
+
+                <com.biosense.adminappv1.biosense.MyTextView
+                    android:id="@+id/id_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="Blank"
+                    android:textColor="#FF7073"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            android:textColor="#546B83" />
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:id="@+id/age_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blank"
+                            android:textColor="#FF7073"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weight"
+                            android:textColor="#546B83" />
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:id="@+id/weight_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blank"
+                            android:textColor="#FF7073"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Height"
+                            android:textColor="#546B83" />
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:id="@+id/height_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blank"
+                            android:textColor="#FF7073"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="8dp">
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textColor="#546B83" />
+
+                        <com.biosense.adminappv1.biosense.MyTextView
+                            android:id="@+id/gender_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blank"
+                            android:textColor="#FF7073"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BMI"
+                        android:padding="8dp"
+                        android:textColor="#8bd6df"/>
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19.0"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="24dp"
+                        android:textColor="#FF7073"
+                        android:id="@+id/bmi_value"/>
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Underweight"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#546B83"
+                        android:id="@+id/bmi_range"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="BMR"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19.0"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="8dp"
+                        android:textSize="24dp"
+                        android:textColor="#FF7073"
+                        android:id="@+id/bmr_value"/>
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/bmr_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Parameter"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="100dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="TBW"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/tbw_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp"
+                        android:text="19.0"
+                        android:textColor="#FF7073"
+                        android:textSize="24dp" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/tbw_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="High"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="FFM"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/ffm_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp"
+                        android:text="19.0"
+                        android:textColor="#FF7073"
+                        android:textSize="24dp" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/ffm_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Parameter"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="FM"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/fm_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp"
+                        android:text="19.0"
+                        android:textColor="#FF7073"
+                        android:textSize="24dp" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/fm_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Normal"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="SMM"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/smm_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp"
+                        android:text="19.0"
+                        android:textColor="#FF7073"
+                        android:textSize="24dp" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/smm_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="High"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="50dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="%BF"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/percbf_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp"
+                        android:text="19.0"
+                        android:textColor="#FF7073"
+                        android:textSize="24dp" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/percbf_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Underweight"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                android:elevation="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Measured Parameters"
+                        android:textColor="#8bd6df" />
+
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/randv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="randv"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:elevation="2dp"
+                android:visibility="gone"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="BM"
+                        android:textColor="#8bd6df" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/bm_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="16dp"
+                        android:text="19.0"
+                        android:textColor="#FF7073"
+                        android:textSize="24dp" />
+
+                    <com.biosense.adminappv1.biosense.MyTextView
+                        android:id="@+id/bm_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="4dp"
+                        android:text="High"
+                        android:textColor="#546B83" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save"
+                android:onClick="save"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#8bd6df"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/pdf_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Report"
+                android:onClick="view_pdf"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#8bd6df"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/pdf_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Report"
+                android:onClick="email_pdf"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#8bd6df"
+                android:layout_marginLeft="16dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

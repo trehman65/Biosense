@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biosense.adminappv1.biosense.BiodataActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingRight="-170dp"
+        android:paddingBottom="32dp"
+        android:src="@drawable/biodata_icon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="32dp"
+        android:orientation="vertical"
+        android:paddingRight="32dp"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIODATA"
+            android:id="@+id/biodata_title"
+            android:textSize="24dp"
+            android:textColor="#1f1f1f"
+            />
+
+        <TextView
+            android:id="@+id/biodata_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter the rest of biodata to continue."
+            android:textSize="30dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"/>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Height"
+                android:id="@+id/height_input"
+                android:backgroundTint="@android:color/transparent"
+                android:inputType="number"/>
+
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Weight"
+                android:id="@+id/weight_input"
+                android:backgroundTint="@android:color/transparent"
+                android:inputType="numberDecimal"/>
+
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:id="@+id/dateofbirth_input"
+                android:backgroundTint="@android:color/transparent"
+                android:focusable="false"
+                android:onClick="dateofbirth_touch" />
+
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/darker_gray"
+                android:onClick="male_btn"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@android:color/darker_gray"
+                android:onClick="female_btn"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Next >"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#8bd6df"
+            android:paddingLeft="-20dp"
+            android:onClick="biodata_next"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

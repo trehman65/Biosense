@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biosense.adminappv1.biosense.WelcomeActivity"
+    android:background="#ffffff"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="-130dp"
+        android:paddingTop="32dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:src="@drawable/main_biosense_text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back.\nEnter patient \nID to continue."
+            android:textSize="30dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/welcome_detail"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <EditText
+                    android:layout_width= "120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Enter ID"
+                    android:id="@+id/enter_id"
+                    android:backgroundTint="@android:color/transparent"
+                    />
+
+
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Readings >"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#8bd6df"
+                android:onClick="next"
+                android:paddingLeft="0dp"
+                android:paddingTop="16dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HISTORY"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="#8bd6df"
+                    android:onClick="history"
+                    android:paddingLeft="-20dp"
+                    android:paddingTop="0dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHOW ALL RECORDS"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textColor="#8bd6df"
+                    android:onClick="allrecords"
+                    android:paddingTop="0dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

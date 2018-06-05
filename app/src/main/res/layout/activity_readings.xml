@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biosense.adminappv1.biosense.ReadingsActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/readings_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingRight="-130dp"
+        android:paddingTop="32dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="READINGS"
+            android:id="@+id/readings_title"
+            android:textSize="24dp"
+            android:textColor="#1f1f1f"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect the device and press start to get values."
+            android:textSize="30dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/readings_detail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arduino not connected"
+            android:id="@+id/textView"/>
+        
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:progressBackgroundTint= "#D3D3D3"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:onClick="get"
+                android:paddingTop="16dp"
+                android:paddingLeft="-30dp"
+                android:textColor="#e24235"/>
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next >"
+                android:id="@+id/reading_next_btn"
+                android:onClick="reading_next"
+                android:paddingTop="16dp"
+                android:paddingLeft="-30dp"
+                android:textColor="#e24235"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

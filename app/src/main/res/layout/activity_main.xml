@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biosense.adminappv1.biosense.MainActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Readings"
+            android:textSize="24dp"
+            android:textAllCaps="true"
+            android:textColor="#1f1f1f"
+            android:paddingBottom="16dp"
+            android:id="@+id/vm_title"/>
+
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connect the device and tap on start to initiate the process."
+                android:id="@+id/main_activity_detail"
+                android:paddingBottom="16dp"
+                android:textSize="30dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/microchip_black"
+                    android:paddingTop="2dp"
+                    android:id="@+id/status_img"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arduino Disconnected."
+                    android:paddingLeft="8dp"
+                    android:id="@+id/status"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Getting Readings"
+                android:id="@+id/getting_readings"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:indeterminate="true"
+                android:id="@+id/readings_progress"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                style="?android:attr/borderlessButtonStyle"
+                android:textColor="#8bd6df"
+                android:onClick="getreadings"
+                android:paddingLeft="-20dp"
+                android:enabled="true"
+                android:id="@+id/start_btn"
+                android:paddingTop="16dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
